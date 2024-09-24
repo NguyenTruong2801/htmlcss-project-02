@@ -43,6 +43,23 @@ a {
     background: #171100;
 }
 
+.heading {
+    color: #171100;
+    font-family: Sen;
+    font-weight: 700;
+    letter-spacing: -1.16px;
+}
+
+.heading.lever1 {
+    font-size: 5.8rem;
+    line-height: 1.17; /* 117.241% */
+}
+
+.heading.lever2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
 .btn:hover {
     opacity: 0.9;
 }
@@ -187,15 +204,6 @@ header .body {
     padding: 64px 0 0 130px;
 }
 
-.content-block .heading {
-    color: #171100;
-    font-family: Sen;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17; /* 117.241% */
-    letter-spacing: -1.16px;
-}
-
 .content-block .desc {
     margin: 22px 0;
     color: #5f5b53;
@@ -272,4 +280,51 @@ header .body {
 
 .hero .highlight {
     margin: 0 0 0 -28px;
+}
+
+/******************** Popular ********************/
+.popular {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .info .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.controls {
+    display: flex;
+}
+
+.controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.controls .control-btn {
+    margin-left: 16px;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.controls .control-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
 }
