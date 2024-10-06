@@ -606,10 +606,12 @@ header .body {
     margin-top: 55px;
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 
 .blog .blog-item {
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #fff;
 }
